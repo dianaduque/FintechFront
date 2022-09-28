@@ -152,7 +152,7 @@ export default function EvaluateCase() {
             const url = path.join('/credit', id, 'download', 'format');
             const fileName = fullPath.split(/(\\|\/)/g).pop();
             
-            await getDownloadFile(fullPath, fileName, history);
+            await getDownloadFile(url, fileName, history);
         }
     }
 
@@ -160,7 +160,7 @@ export default function EvaluateCase() {
         if (fullPath) {
             const url = path.join('/credit', id, 'download', 'property');
             const fileName = fullPath.split(/(\\|\/)/g).pop();
-            await getDownloadFile(fullPath, fileName, history);
+            await getDownloadFile(url, fileName, history);
         }
     }
 
